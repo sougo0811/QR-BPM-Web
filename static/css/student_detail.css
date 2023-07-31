@@ -1,0 +1,184 @@
+.main{
+  height: 100%;
+  width: 100%;
+  background-color: whitesmoke;
+}
+
+.canvas{
+  width: 80%;
+  height: 100%;
+  background-color: white;
+  margin: 0 10% 0 10%;
+}
+
+.content{
+  margin: 0px;
+  padding: 40px;
+  font-size: 24px;
+}
+
+.name_block{
+  padding-bottom: 15px;
+}
+
+@media (min-width: 576px) and (max-width: 700px){
+  .col-sm-2 {
+    flex: 0 0 auto;
+    width: 31%;
+  }
+
+  .col-sm-10 {
+    flex: 0 0 auto;
+    width: 69%;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 900px){
+  .col-sm-2 {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+
+  .col-sm-10 {
+    flex: 0 0 auto;
+    width: 75%;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1000px){
+  .col-sm-2 {
+    flex: 0 0 auto;
+    width: 20%;
+  }
+
+  .col-sm-10 {
+    flex: 0 0 auto;
+    width: 80%;
+  }
+}
+
+.form-control{
+  margin-top: 10px;
+}
+
+.name{
+  float: left;
+  font-weight: bold;
+  width: 150px;
+}
+
+.number_block{
+  padding-bottom: 15px;
+}
+
+.number{
+  float: left;
+  font-weight: bold;
+}
+
+.student_number{
+  padding-left: 150px;
+}
+
+.email_block{
+  padding-bottom: 15px;
+}
+
+.email{
+  float: left;
+  font-weight: bold;
+}
+
+.student_email{
+  padding-left: 160px;
+}
+
+.count_block{
+  padding-bottom: 15px;
+}
+
+.count{
+  float: left;
+  font-weight: bold;
+}
+
+.student_count{
+  padding-left: 160px;
+}
+
+.created_date_block{
+  padding-bottom: 15px;
+}
+
+.created_date{
+  float: left;
+  font-weight: bold;
+  width: 150px;
+}
+
+.student_created_date{
+  padding-left: 120px;
+}
+
+
+.buttons{
+  display: flex;
+  justify-content: center;
+}
+
+.edit{
+  padding-right: 25px;
+}
+
+.ans_result{
+  padding-right: 25px;
+}
+
+.delete{
+  padding-left: 25px;
+}
+
+.submit{
+  padding-right: 25px;
+}
+
+.small_space{
+  width: 100%;
+  padding-top: 10px;
+}
+
+.col-form-label {
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+textarea.form-control{
+  margin-bottom: 20px;
+}
+
+@media (max-width: 800px){
+
+  .student_created_date_edit{
+    padding-left: 150px;
+  }
+}
+
+@media (max-width: 650px){
+  .student_created_date{
+    clear: both;
+    padding-left: 30px;
+  }
+
+  .student_created_date_edit{
+    clear: both;
+    padding-left: 30px;
+  }
+}
+
+@media (max-width: 450px){
+  .student_created_date{
+    clear: both;
+    padding-left: 30px;
+    font-size: 16px;
+  }
+}
