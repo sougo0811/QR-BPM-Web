@@ -1,0 +1,36 @@
+{% extends 'student/index.html' %}
+{% load static %}
+
+{% block content %}
+  <link rel="stylesheet" href="{% static 'css/student_detail.css' %}">
+  <div class="main">
+    <div class="canvas">
+      <div class="content">
+        <div class="name_block">
+          <div class="name">学生氏名</div>
+          <div class="student_name">{{ student.name }}</div>
+        </div>
+        <div class="number_block">
+          <div class="number">学籍番号</div>
+          <div class="student_number">{{ student.number }}</div>
+        </div>
+        <div class="email_block">
+          <div class="email">メールアドレス</div>
+          <div class="student_email">{{ student.email }}</div>
+        </div>
+        <div class="count_block">
+          <div class="count">駐輪違反回数</div>
+          <div class="student_count">{{ student.count }}</div>
+        </div>
+        <div class="created_date_block">
+          <div class="created_date">作成日</div>
+          <div class="student_created_date">{{ student.created_date }}</div>
+        </div>
+        <div class="buttons">
+          <div class="edit">
+            <a href="{% url 'student_send_email' pk=student.pk %}"><button type="button" class="btn btn-outline-secondary">メールを送信</button></a>
+          </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
